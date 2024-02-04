@@ -1,6 +1,14 @@
-function add(n1, n2) {
-    return n1 + n2;
+function add(n1, n2, showResult, phrase) {
+    var result = n1 + n2;
+    if (showResult) {
+        console.log(phrase + result);
+    }
+    else {
+        return phrase + result;
+    }
 }
 var num1 = 3;
 var num2 = 4;
-console.log(add(num1, num2));
+var resultShow = true;
+var phrase = "the result is ";
+add(num1, num2, resultShow, phrase);
