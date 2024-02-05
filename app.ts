@@ -25,10 +25,14 @@
 //   console.log(hobby);
 // }
 
-let favoriteSports: string[];
+// let favoriteSports: string[];
 
-favoriteSports = ["basketball", "football"];
+// favoriteSports = ["basketball", "football"];
 
-for (const sport of favoriteSports) {
-  console.log(sport.toUpperCase());
-}
+// for (const sport of favoriteSports) {
+//   console.log(sport.toUpperCase());
+// }
+
+let role: [number, string] = [1, "author"];
+
+role[1] = "admin";
