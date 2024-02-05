@@ -1,15 +1,16 @@
-function add(n1: number, n2: number, showResult: boolean, phrase: string) {
-  let result = n1 + n2;
-  if (showResult) {
-    console.log(phrase + result);
-  } else {
-    return phrase + result;
-  }
-}
+// const person = {
+//   name: "Max",
+//   age: 26,
+// };
 
-const num1 = 3;
-const num2 = 4;
-const resultShow = true;
-const phrase = "the result is ";
+// console.log(person.nickname)
 
-add(num1, num2, resultShow, phrase);
+// const person: object = {
+//   name: "Max",
+//   age: 26,
+// };
+
+const person: { name: string; age: number } = {
+  name: "Max",
+  age: 26,
+};
