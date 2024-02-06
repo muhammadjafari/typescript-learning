@@ -19,9 +19,20 @@
 // for (const hobby of person.hobbies) {
 //   console.log(hobby);
 // }
-var favoriteSports;
-favoriteSports = ["basketball", "football"];
-for (var _i = 0, favoriteSports_1 = favoriteSports; _i < favoriteSports_1.length; _i++) {
-    var sport = favoriteSports_1[_i];
-    console.log(sport.toUpperCase());
-}
+// let favoriteSports: string[];
+// favoriteSports = ["basketball", "football"];
+// for (const sport of favoriteSports) {
+//   console.log(sport.toUpperCase());
+// }
+// let role: [number, string] = [1, "author"];
+// role[1] = "admin";
+var Role;
+(function (Role) {
+    Role[Role["ADMIN"] = 0] = "ADMIN";
+    Role[Role["AUTHOR"] = 1] = "AUTHOR";
+    Role[Role["READ_ONLY"] = 2] = "READ_ONLY";
+})(Role || (Role = {}));
+var person = {
+    role: Role.ADMIN,
+};
+console.log(person);

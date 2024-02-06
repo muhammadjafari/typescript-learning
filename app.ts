@@ -33,6 +33,18 @@
 //   console.log(sport.toUpperCase());
 // }
 
-let role: [number, string] = [1, "author"];
+// let role: [number, string] = [1, "author"];
 
-role[1] = "admin";
+// role[1] = "admin";
+
+enum Role {
+  ADMIN,
+  AUTHOR,
+  READ_ONLY,
+}
+
+const person = {
+  role: Role.ADMIN,
+};
+
+console.log(person);
