@@ -1,7 +1,10 @@
+type Combinable = number | string;
+type resultDiscriptor = "as-number";
+
 function combine(
-  input1: number | string,
-  input2: number | string,
-  resultType: "as-number"
+  input1: Combinable,
+  input2: Combinable,
+  resultType: resultDiscriptor
 ) {
   let result;
   if (
