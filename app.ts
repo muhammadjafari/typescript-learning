@@ -37,14 +37,20 @@
 
 // role[1] = "admin";
 
-enum Role {
-  ADMIN,
-  AUTHOR,
-  READ_ONLY,
-}
+// enum Role {
+//   ADMIN,
+//   AUTHOR,
+//   READ_ONLY,
+// }
 
-const person = {
-  role: Role.ADMIN,
-};
+// const person = {
+//   role: Role.ADMIN,
+// };
 
-console.log(person);
+// console.log(person);
+
+let person: any;
+
+person = 1;
+
+person = "Max";

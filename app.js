@@ -26,13 +26,15 @@
 // }
 // let role: [number, string] = [1, "author"];
 // role[1] = "admin";
-var Role;
-(function (Role) {
-    Role[Role["ADMIN"] = 0] = "ADMIN";
-    Role[Role["AUTHOR"] = 1] = "AUTHOR";
-    Role[Role["READ_ONLY"] = 2] = "READ_ONLY";
-})(Role || (Role = {}));
-var person = {
-    role: Role.ADMIN,
-};
-console.log(person);
+// enum Role {
+//   ADMIN,
+//   AUTHOR,
+//   READ_ONLY,
+// }
+// const person = {
+//   role: Role.ADMIN,
+// };
+// console.log(person);
+var person;
+person = 1;
+person = "Max";
