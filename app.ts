@@ -1,56 +1,13 @@
-// const person = {
-//   name: "Max",
-//   age: 26,
-// };
+function combine(input1: number | string, input2: number | string) {
+  let result;
+  if (typeof input1 === "number" && typeof input2 === "number") {
+    result = input1 + input2;
+  } else {
+    result = input1.toString() + " " + input2.toString();
+  }
 
-// console.log(person.nickname)
+  console.log(result);
+}
 
-// const person: object = {
-//   name: "Max",
-//   age: 26,
-// };
-
-// const person: { name: string; age: number } = {
-//   name: "Max",
-//   age: 26,
-// };
-
-// const person = {
-//   name: "Max",
-//   age: 26,
-//   hobbies: ["sports", "movies"],
-// };
-
-// for (const hobby of person.hobbies) {
-//   console.log(hobby);
-// }
-
-// let favoriteSports: string[];
-
-// favoriteSports = ["basketball", "football"];
-
-// for (const sport of favoriteSports) {
-//   console.log(sport.toUpperCase());
-// }
-
-// let role: [number, string] = [1, "author"];
-
-// role[1] = "admin";
-
-// enum Role {
-//   ADMIN,
-//   AUTHOR,
-//   READ_ONLY,
-// }
-
-// const person = {
-//   role: Role.ADMIN,
-// };
-
-// console.log(person);
-
-let person: any;
-
-person = 1;
-
-person = "Max";
+combine(1, 2);
+combine("Max", "Stepen");
