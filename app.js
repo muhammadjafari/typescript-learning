@@ -42,10 +42,13 @@
 // addAndHandle(10, 20, (result) => {
 //   console.log(result);
 // });
-var userInput;
-var userName = "Max";
-userInput = 5;
-userInput = "Max";
-if (typeof userName === "string") {
-    userInput = userName;
+// let userInput: unknown;
+// let userName: string = "Max";
+// userInput = 5;
+// userInput = "Max";
+// if (typeof userName === "string") {
+//   userInput = userName;
+// }
+function generateError(detail) {
+    throw { detail: detail };
 }

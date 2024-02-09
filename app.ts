@@ -55,12 +55,16 @@
 //   console.log(result);
 // });
 
-let userInput: unknown;
-let userName: string = "Max";
+// let userInput: unknown;
+// let userName: string = "Max";
 
-userInput = 5;
-userInput = "Max";
+// userInput = 5;
+// userInput = "Max";
 
-if (typeof userName === "string") {
-  userInput = userName;
+// if (typeof userName === "string") {
+//   userInput = userName;
+// }
+
+function generateError(detail: string): never {
+  throw { detail: detail };
 }
