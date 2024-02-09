@@ -46,11 +46,21 @@
 
 // console.log(add(1, 2));
 
-function addAndHandle(n1: number, n2: number, cb: (num: number) => void) {
-  let result = n1 + n2;
-  cb(result);
-}
+// function addAndHandle(n1: number, n2: number, cb: (num: number) => void) {
+//   let result = n1 + n2;
+//   cb(result);
+// }
 
-addAndHandle(10, 20, (result) => {
-  console.log(result);
-});
+// addAndHandle(10, 20, (result) => {
+//   console.log(result);
+// });
+
+let userInput: unknown;
+let userName: string = "Max";
+
+userInput = 5;
+userInput = "Max";
+
+if (typeof userName === "string") {
+  userInput = userName;
+}

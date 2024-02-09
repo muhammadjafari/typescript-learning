@@ -35,10 +35,17 @@
 // let combine: (a: number, b: number) => number;
 // combine = add;
 // console.log(add(1, 2));
-function addAndHandle(n1, n2, cb) {
-    var result = n1 + n2;
-    cb(result);
+// function addAndHandle(n1: number, n2: number, cb: (num: number) => void) {
+//   let result = n1 + n2;
+//   cb(result);
+// }
+// addAndHandle(10, 20, (result) => {
+//   console.log(result);
+// });
+var userInput;
+var userName = "Max";
+userInput = 5;
+userInput = "Max";
+if (typeof userName === "string") {
+    userInput = userName;
 }
-addAndHandle(10, 20, function (result) {
-    console.log(result);
-});
