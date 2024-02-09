@@ -19,13 +19,19 @@
 // }
 // combine(1, 2, "as-number");
 // combine("Max", "Stepen", "as-number");
+// function add(n1: number, n2: number): string {
+//   return n1.toString() + n2.toString();
+// }
+// function noValue(n1, n2): void {
+//   console.log("no val" + n1 + n2);
+// }
+// function noValueReturn(n1, n2): undefined {
+//   let result = n1 + n2;
+//   return;
+// }
 function add(n1, n2) {
-    return n1.toString() + n2.toString();
+    return n1 + n2;
 }
-function noValue(n1, n2) {
-    console.log("no val" + n1 + n2);
-}
-function noValueReturn(n1, n2) {
-    var result = n1 + n2;
-    return;
-}
+var combine;
+combine = add;
+console.log(add(1, 2));
