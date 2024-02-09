@@ -1,13 +1,31 @@
-function combine(input1, input2, resultType) {
-    var result;
-    if ((typeof input1 === "number" && typeof input2 === "number") ||
-        resultType === "as-number") {
-        result = +input1 + +input2;
-    }
-    if (typeof input1 === "string" && typeof input2 === "string") {
-        result = input1.toString() + " " + input2.toString();
-    }
-    console.log(result);
+// type Combinable = number | string;
+// type resultDiscriptor = "as-number";
+// function combine(
+//   input1: Combinable,
+//   input2: Combinable,
+//   resultType: resultDiscriptor
+// ) {
+//   let result;
+//   if (
+//     (typeof input1 === "number" && typeof input2 === "number") ||
+//     resultType === "as-number"
+//   ) {
+//     result = +input1 + +input2;
+//   }
+//   if (typeof input1 === "string" && typeof input2 === "string") {
+//     result = input1.toString() + " " + input2.toString();
+//   }
+//   console.log(result);
+// }
+// combine(1, 2, "as-number");
+// combine("Max", "Stepen", "as-number");
+function add(n1, n2) {
+    return n1.toString() + n2.toString();
 }
-combine(1, 2, "as-number");
-combine("Max", "Stepen", "as-number");
+function noValue(n1, n2) {
+    console.log("no val" + n1 + n2);
+}
+function noValueReturn(n1, n2) {
+    var result = n1 + n2;
+    return;
+}
