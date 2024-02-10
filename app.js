@@ -1,3 +1,4 @@
+"use strict";
 // type Combinable = number | string;
 // type resultDiscriptor = "as-number";
 // function combine(
