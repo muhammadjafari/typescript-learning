@@ -1,5 +1,5 @@
 class Department {
-  private employees: string[] = [];
+  private readonly employees: string[] = [];
 
   constructor(private name: string) {}
 
