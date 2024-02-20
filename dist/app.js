@@ -20,3 +20,7 @@ accounting.addEmployee("Max");
 accounting.printEmployeeInformation();
 // accounting.employees[1] = "alex";
 accounting.printEmployeeInformation();
+class ItDepartment extends Department {
+}
+const it = new ItDepartment("ItDepartment");
+it.describe();
