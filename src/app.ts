@@ -1,9 +1,11 @@
-interface AddFn {
-  (a: number, b: number): number;
+interface Person {
+  name?: string;
 }
 
-let add: AddFn;
-
-add = (n1: number, n2: number) => {
-  return n1 + n2;
-};
+class Person implements Person {
+  constructor(n: string) {
+    if (n) {
+      this.name = n;
+    }
+  }
+}
