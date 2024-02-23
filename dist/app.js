@@ -1,9 +1,8 @@
 "use strict";
-let Max;
-Max = {
+let max;
+max = {
     name: "Max",
-    age: 18,
     greet() {
-        console.log("hello " + this.name);
+        console.log("hello");
     },
 };

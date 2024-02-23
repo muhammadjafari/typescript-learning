@@ -1,15 +1,15 @@
-interface Person {
-  readonly name: string;
-  age: number;
+interface Named {
+  name: string;
+}
 
+interface Greetable extends Named {
   greet(): void;
 }
 
-let Max: Person;
-Max = {
+let max: Greetable;
+max = {
   name: "Max",
-  age: 18,
   greet() {
-    console.log("hello " + this.name);
+    console.log("hello");
   },
 };
