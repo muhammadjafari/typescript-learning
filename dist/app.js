@@ -1,8 +1,5 @@
 "use strict";
-let max;
-max = {
-    name: "Max",
-    greet() {
-        console.log("hello");
-    },
+let add;
+add = (n1, n2) => {
+    return n1 + n2;
 };

@@ -1,15 +1,9 @@
-interface Named {
-  name: string;
+interface AddFn {
+  (a: number, b: number): number;
 }
 
-interface Greetable extends Named {
-  greet(): void;
-}
+let add: AddFn;
 
-let max: Greetable;
-max = {
-  name: "Max",
-  greet() {
-    console.log("hello");
-  },
+add = (n1: number, n2: number) => {
+  return n1 + n2;
 };
