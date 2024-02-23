@@ -1,35 +1,15 @@
-class Department {
-  private readonly employees: string[] = [];
+interface Person {
+  name: string;
+  age: number;
 
-  constructor(private name: string) {}
-
-  describe(this: Department) {
-    console.log("Department: " + this.name);
-  }
-
-  addEmployee(name: string) {
-    this.employees.push(name);
-  }
-
-  printEmployeeInformation() {
-    console.log(this.employees);
-  }
+  greet(): void;
 }
 
-const accounting = new Department("Accounting");
-
-accounting.describe();
-
-accounting.addEmployee("Max");
-
-accounting.printEmployeeInformation();
-
-// accounting.employees[1] = "alex";
-
-accounting.printEmployeeInformation();
-
-class ItDepartment extends Department {}
-
-const it = new ItDepartment("ItDepartment");
-
-it.describe();
+let Max: Person;
+Max = {
+  name: "Max",
+  age: 18,
+  greet() {
+    console.log("hello " + this.name);
+  },
+};
