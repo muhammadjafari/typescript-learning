@@ -85,3 +85,10 @@ function moveAnimal(animal: Animal) {
   }
   console.log(speed);
 }
+
+// const element = <HTMLInputElement>document.getElementById("input")!;
+const element = document.getElementById("input") as HTMLInputElement;
+
+if (element) {
+  (element as HTMLInputElement).value = "hello";
+}
