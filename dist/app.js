@@ -46,4 +46,8 @@ function moveAnimal(animal) {
     }
     console.log(speed);
 }
+// const element = <HTMLInputElement>document.getElementById("input")!;
 const element = document.getElementById("input");
+if (element) {
+    element.value = "hello";
+}
