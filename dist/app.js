@@ -1,8 +1,6 @@
 "use strict";
-class Person {
-    constructor(n) {
-        if (n) {
-            this.name = n;
-        }
-    }
-}
+const e1 = {
+    name: "Max",
+    privileges: ["create-server"],
+    startDate: new Date(),
+};
