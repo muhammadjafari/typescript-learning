@@ -1,26 +1,29 @@
-type Employee = {
-  name: string;
-  startDate: Date;
-};
+// type Employee = {
+//   name: string;
+//   startDate: Date;
+// };
 
-type Admin = {
-  name: string;
-  privileges: string[];
-};
+// type Admin = {
+//   name: string;
+//   privileges: string[];
+// };
 
-type ElevatedEmployee = Admin & Employee;
+// type ElevatedEmployee = Admin & Employee;
 
-const e1: ElevatedEmployee = {
-  name: "Max",
-  privileges: ["create-server"],
-  startDate: new Date(),
-};
+// const e1: ElevatedEmployee = {
+//   name: "Max",
+//   privileges: ["create-server"],
+//   startDate: new Date(),
+// };
 
 type Combinable = string | number;
 type Numeric = number | boolean;
 
 type Universal = Combinable & Numeric;
 
+function add(a: number, b: number): number;
+function add(a: string, b: string): string;
+function add(a: string, b: number): string;
 function add(a: Combinable, b: Combinable) {
   if (typeof a === "string" || typeof b === "string") {
     return a.toString() + b.toString();
@@ -28,76 +31,78 @@ function add(a: Combinable, b: Combinable) {
   return a + b;
 }
 
-type unknownEmployee = Admin | Employee;
+const result = add(2, 5);
 
-function printEmployeeInfo(emp: unknownEmployee) {
-  if ("startDate" in emp) {
-    console.log(emp.startDate);
-  }
-}
+// type unknownEmployee = Admin | Employee;
 
-class Car {
-  drive() {
-    console.log("driving ...");
-  }
-}
+// function printEmployeeInfo(emp: unknownEmployee) {
+//   if ("startDate" in emp) {
+//     console.log(emp.startDate);
+//   }
+// }
 
-class Truck {
-  drive() {
-    console.log("driving ...");
-  }
+// class Car {
+//   drive() {
+//     console.log("driving ...");
+//   }
+// }
 
-  loadCargo() {
-    console.log("loading ...");
-  }
-}
+// class Truck {
+//   drive() {
+//     console.log("driving ...");
+//   }
 
-type Vehicle = Car | Truck;
+//   loadCargo() {
+//     console.log("loading ...");
+//   }
+// }
 
-function useVehicle(vehicle: Vehicle) {
-  vehicle.drive();
-  if (vehicle instanceof Truck) {
-    vehicle.loadCargo();
-  }
-}
+// type Vehicle = Car | Truck;
 
-interface Bird {
-  type: "bird";
-  flyingSpeed: number;
-}
+// function useVehicle(vehicle: Vehicle) {
+//   vehicle.drive();
+//   if (vehicle instanceof Truck) {
+//     vehicle.loadCargo();
+//   }
+// }
 
-interface Horse {
-  type: "horse";
-  runningSpeed: number;
-}
+// interface Bird {
+//   type: "bird";
+//   flyingSpeed: number;
+// }
 
-type Animal = Bird | Horse;
+// interface Horse {
+//   type: "horse";
+//   runningSpeed: number;
+// }
 
-function moveAnimal(animal: Animal) {
-  let speed;
-  switch (animal.type) {
-    case "bird":
-      speed = animal.flyingSpeed;
-      break;
-    case "horse":
-      speed = animal.runningSpeed;
-      break;
-  }
-  console.log(speed);
-}
+// type Animal = Bird | Horse;
 
-// const element = <HTMLInputElement>document.getElementById("input")!;
-const element = document.getElementById("input") as HTMLInputElement;
+// function moveAnimal(animal: Animal) {
+//   let speed;
+//   switch (animal.type) {
+//     case "bird":
+//       speed = animal.flyingSpeed;
+//       break;
+//     case "horse":
+//       speed = animal.runningSpeed;
+//       break;
+//   }
+//   console.log(speed);
+// }
 
-if (element) {
-  (element as HTMLInputElement).value = "hello";
-}
+// // const element = <HTMLInputElement>document.getElementById("input")!;
+// const element = document.getElementById("input") as HTMLInputElement;
 
-interface ErrorContainer {
-  [prop: string]: string;
-}
+// if (element) {
+//   (element as HTMLInputElement).value = "hello";
+// }
 
-const errorBag: ErrorContainer = {
-  name: "Max",
-  job: "Programmer",
-};
+// interface ErrorContainer {
+//   [prop: string]: string;
+// }
+
+// const errorBag: ErrorContainer = {
+//   name: "Max",
+//   job: "Programmer",
+// };
