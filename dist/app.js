@@ -16,6 +16,9 @@ const fetchUserData = {
     job: { title: "Programmer" },
 };
 console.log((_a = fetchUserData === null || fetchUserData === void 0 ? void 0 : fetchUserData.job) === null || _a === void 0 ? void 0 : _a.title);
+const userData = null;
+const storedData = userData !== null && userData !== void 0 ? userData : "DEFAULT";
+console.log(storedData);
 // type unknownEmployee = Admin | Employee;
 // function printEmployeeInfo(emp: unknownEmployee) {
 //   if ("startDate" in emp) {
