@@ -3,6 +3,7 @@
 //   name: string;
 //   startDate: Date;
 // };
+var _a;
 function add(a, b) {
     if (typeof a === "string" || typeof b === "string") {
         return a.toString() + b.toString();
@@ -10,6 +11,11 @@ function add(a, b) {
     return a + b;
 }
 const result = add(2, 5);
+const fetchUserData = {
+    name: "Max",
+    job: { title: "Programmer" },
+};
+console.log((_a = fetchUserData === null || fetchUserData === void 0 ? void 0 : fetchUserData.job) === null || _a === void 0 ? void 0 : _a.title);
 // type unknownEmployee = Admin | Employee;
 // function printEmployeeInfo(emp: unknownEmployee) {
 //   if ("startDate" in emp) {

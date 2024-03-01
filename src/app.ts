@@ -33,6 +33,13 @@ function add(a: Combinable, b: Combinable) {
 
 const result = add(2, 5);
 
+const fetchUserData = {
+  name: "Max",
+  job: { title: "Programmer" },
+};
+
+console.log(fetchUserData?.job?.title);
+
 // type unknownEmployee = Admin | Employee;
 
 // function printEmployeeInfo(emp: unknownEmployee) {
