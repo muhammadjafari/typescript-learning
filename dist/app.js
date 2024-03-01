@@ -51,3 +51,7 @@ const element = document.getElementById("input");
 if (element) {
     element.value = "hello";
 }
+const errorBag = {
+    name: "Max",
+    job: "Programmer",
+};

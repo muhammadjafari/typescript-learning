@@ -92,3 +92,12 @@ const element = document.getElementById("input") as HTMLInputElement;
 if (element) {
   (element as HTMLInputElement).value = "hello";
 }
+
+interface ErrorContainer {
+  [prop: string]: string;
+}
+
+const errorBag: ErrorContainer = {
+  name: "Max",
+  job: "Programmer",
+};
