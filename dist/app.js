@@ -1,8 +1,13 @@
 "use strict";
-const names = ['max', 'john'];
-const promise = new Promise((resolve, reject) => {
-    resolve("this is a text");
-});
-promise.then(data => {
-    data.split('');
-});
+// const names : Array<string> = ['max','john']
+// const promise: Promise<string> = new Promise((resolve, reject)=> {
+//   resolve("this is a text");
+// })
+// promise.then(data => {
+//   data.split('')
+// })
+function merge(obj1, obj2) {
+    return Object.assign(obj1, obj2);
+}
+const objMerged = merge({ name: 'Max' }, { age: 30 });
+console.log(objMerged.name);
