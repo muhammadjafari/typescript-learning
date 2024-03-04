@@ -11,3 +11,7 @@ function merge(obj1, obj2) {
 }
 const objMerged = merge({ name: 'Max' }, { age: 30 });
 console.log(objMerged.name);
+function countAndDescribe(element) {
+    console.log(element.length);
+}
+countAndDescribe("hello world!");

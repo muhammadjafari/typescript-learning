@@ -14,3 +14,14 @@ function merge<T extends {},U extends {}>(obj1: T,obj2: U){
 
 const objMerged = merge({name:'Max'},{age:30})
 console.log(objMerged.name);
+
+interface lengthy {
+  length: number;
+}
+
+function countAndDescribe<T extends lengthy>(element: T): void{
+  console.log(element.length);
+  
+}
+
+countAndDescribe("hello world!");
