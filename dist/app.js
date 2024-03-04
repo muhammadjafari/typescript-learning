@@ -15,3 +15,6 @@ function countAndDescribe(element) {
     console.log(element.length);
 }
 countAndDescribe("hello world!");
+function extractAndConvert(obj, key) {
+    console.log(obj[key]);
+}
