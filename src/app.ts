@@ -53,3 +53,23 @@ textStorage.addItem("Max");
 textStorage.addItem("Manu");
 textStorage.removeItem("Max");
 textStorage.getItems();
+
+interface CourseGoal {
+  title: string;
+  description: string;
+  completeDate: Date;
+}
+
+function createCourseGoal(
+  title: string,
+  description: string,
+  completeDate: Date
+): CourseGoal {
+  let courseGoal: Partial<CourseGoal> = {};
+  courseGoal.title = title;
+  courseGoal.description = description;
+  courseGoal.completeDate = completeDate;
+  return courseGoal as CourseGoal;
+}
+
+const names: Readonly<string[]> = ["Max", "Manu"];

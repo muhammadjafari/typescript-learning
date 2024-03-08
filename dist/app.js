@@ -37,3 +37,11 @@ textStorage.addItem("Max");
 textStorage.addItem("Manu");
 textStorage.removeItem("Max");
 textStorage.getItems();
+function createCourseGoal(title, description, completeDate) {
+    let courseGoal = {};
+    courseGoal.title = title;
+    courseGoal.description = description;
+    courseGoal.completeDate = completeDate;
+    return courseGoal;
+}
+const names = ["Max", "Manu"];
